@@ -6,7 +6,7 @@ const cx = classNames.bind(styles);
 
 function User() {
     return (
-        <li className={cx("header__navbar-item header__navbar-user")}> 
+        <li className={cx("header__navbar-item", "header__navbar-user")}> 
             <img src={images.avt} alt="Avatar" className={cx("header__navbar-user-img")} />
             <span className={cx("header__navbar-user-name")}>Trần Trang</span>
             <ul className={cx("header__navbar-user-menu")}>

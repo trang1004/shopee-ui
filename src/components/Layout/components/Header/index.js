@@ -9,6 +9,8 @@ import Notification from './Notification';
 import Help from './Help';
 import User from './User';
 import Logo from './Logo';
+import Search from './Search';
+import Cart from './Cart';
 
 
 const cx = classNames.bind(styles);
@@ -16,7 +18,7 @@ function Header() {
     return (
         <header className={cx('header')}>
             <div className={cx('grid wide')}>
-                <nav className={cx('header__navbar hide-on-mobile-tablet')}>
+                <nav className={cx('header__navbar','hide-on-mobile-tablet')}>
                     <ul className={cx('header__navbar-list')}>
                         <QAcode />
                         <Connect />
@@ -35,6 +37,9 @@ function Header() {
                         </span>
                     </label>
                     <Logo />
+                    <input type="checkbox" hidden id="mobile-search-checkbox" className={cx("header__search-checkbox")} />
+                    <Search />
+                    <Cart />
                 </div>
             </div>
         </header>
