@@ -1,5 +1,6 @@
 import Header from '~/components/Layout/components/Header';
 import classNames from 'classnames/bind';
+import Footer from '~/components/Layout/components/Footer';
 
 import styles from '~/components/GlobalStyles/GlobalStyles.scss';
 const cx = classNames.bind(styles);
@@ -13,6 +14,8 @@ function HeaderOnly({ children }) {
                     <div className={cx("row","sm-gutter","app__content")}>{children}</div>
                 </div>
             </div>
+            <Footer />
+
         </div>
     );
 }

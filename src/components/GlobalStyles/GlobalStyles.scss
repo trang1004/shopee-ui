@@ -1967,6 +1967,10 @@ span.home-product-item__liked-icon{
     height: 36px;
     background-color:rgba(255,216,57,0.95);
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
 }
 .home-product-item__sale-off::before{
     content: "";

@@ -2,6 +2,7 @@ import classNames from 'classnames/bind';
 import Header from '../components/Header';
 import SideBar from './SideBar';
 import styles from './DefaultLayout.module.scss';
+import Footer from '../components/Footer';
 
 const cx = classNames.bind(styles);
 
@@ -17,6 +18,7 @@ function DefaultLayout({ children }) {
                     </div>
                 </div>
             </div>
+            <Footer />
         </div>
     );
 }
